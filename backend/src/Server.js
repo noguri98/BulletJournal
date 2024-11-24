@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const os = require('os');
-
-const diaryRouter = require('../routes/diary');
+const diaryRouter = require('./routes/Diary');
 
 const app = express();
 const PORT = process.env.PORT || 3001;

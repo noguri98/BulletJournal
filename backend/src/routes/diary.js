@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 // 데이터베이스 연결
-const db = new sqlite3.Database(path.join(__dirname, '../../public/database.db'), (err) => {
+const db = new sqlite3.Database(path.join(__dirname, '../../public/datebase.db'), (err) => {
     if (err) {
         console.error('데이터베이스 연결 실패:', err.message);
     } else {
