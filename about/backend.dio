@@ -40,7 +40,13 @@
                     <mxGeometry x="17.139999999999986" y="30" width="112.86" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;server.js&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="110" y="210" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="110" y="320" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="routes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="205" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;diary.js&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="250" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
