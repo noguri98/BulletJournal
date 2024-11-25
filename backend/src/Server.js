@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const os = require('os');
 
-const diaryRouter = require('./routes/Diary');
-const payRouter = require('./routes/Pay');
+const diaryRouter = require('./routes/diary');
+const payRouter = require('./routes/pay');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
