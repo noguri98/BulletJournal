@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const os = require('os');
+
 const diaryRouter = require('./routes/Diary');
+const payRouter = require('./routes/Pay');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -27,6 +29,7 @@ function ipAddress() {
 
 // 라우터 설정
 app.use('/api/diary', diaryRouter);
+app.use('/api/pay', payRouter);
 
 // 기본 라우트
 app.get('/', (req, res) => {
