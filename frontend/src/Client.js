@@ -8,34 +8,27 @@ import Dashboard from './routes/Dashboard';
 import Diary from './routes/Diary';
 import Finance from './routes/Finance';
 
-function UserDropDown() {
+function ToolBar() {
 
-    const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
-
-    function pageNavigation(path) {
-
-        navigate(path);
-        setIsOpen(false);
-    }
 
     return (
 
-        <>
-        <button className='user-dropdown' onClick={() => setIsOpen(!isOpen)}>
-            사용자 옵션
-        </button>
-        {isOpen && (
-            <div className='user-content'>
-                <p onClick={() => pageNavigation('/')}> 홈 </p>
-                <p onClick={() => pageNavigation('/dashboard')}> 대시보드 </p>
-                <p onClick={() => pageNavigation('/diary')}> 일기 </p>
-                <p onClick={() => pageNavigation('/finance')}> 가계부 </p>
-            </div>
-        )}
-        </>
+        <button className='toolbar-list01' onClick={() => navigate('/')}> Home </button>
     )
+}
 
+function Body() {
+
+    return (
+
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/diary" element={<Diary />} />
+            <Route path="/finance" element={<Finance />} />
+        </Routes>
+    )
 }
 
 const Client = () => {
@@ -45,17 +38,10 @@ const Client = () => {
         <Router>
             <div className='client'>
                 <div className='toolbar'>
-                    <div className='user'>
-                        <UserDropDown />
-                    </div>
+                    <ToolBar />
                 </div>
                 <div className='body'>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/diary" element={<Diary />} />
-                    <Route path="/finance" element={<Finance />} />
-                </Routes>
+                    <Body />
                 </div>
             </div>
         </Router>

@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const os = require('os');
 
+const homeRouter = require('./routes/home');
 const diaryRouter = require('./routes/diary');
 const payRouter = require('./routes/pay');
 
@@ -28,8 +29,10 @@ function ipAddress() {
 }
 
 // 라우터 설정
+app.use('/api/home', homeRouter);
 app.use('/api/diary', diaryRouter);
 app.use('/api/pay', payRouter);
+
 
 // 기본 라우트
 app.get('/', (req, res) => {
