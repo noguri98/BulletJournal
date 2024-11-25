@@ -1,0 +1,72 @@
+* {
+  /* margin: 0; */
+  padding: 0px 5px 0px 5px;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS';
+
+  background-color: black;
+}
+
+.client {
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: whitesmoke; */
+}
+
+.toolbar {
+
+  width: 100%;
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid gray;
+}
+
+.user {
+
+  width: 10%;
+  height: 40px;
+
+  padding: 0;
+
+  border: 1px solid gray;
+}
+
+.user-dropdown {
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid gray;
+
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+
+  /* text-align: center; */
+}
+
+.user-content {
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+
+  text-align: left;
+  padding-left: 20px;
+
+  font-size: 0.9em;
+  color: white;
+
+  border: 1px solid gray;
+}
